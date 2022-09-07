@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="shortcut icon" href="https://apprecs.org/gp/images/app-icons/300/32/com.standerstudio.love.calculator.jpg" type="image/x-icon">
+    
+    <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="/assets/index.3392bdf7.css">
+</head>
+
+<body class="bg-red-500">
+    <div id="loading"></div>
+    <img src="/assets/love.735cedde.jpg" alt="backgroundimage" class="-z-10 absolute w-full top-0 h-full object-cover">
+    <h1
+        class="text-3xl text-white font-bold font-serif text-center mx-2 mt-3 mb-10 underline decoration-emerald-400 decoration-solid sm:text-5xl">
+        Love Calculator</h1>
+    <div class="bg-slate-800 bg-opacity-60 max-w-xl mt-2 py-4 rounded-2xl my-14 sm:mx-auto md:my-14">
+        <form>
+            <input type="text"
+                class="flow-root mx-auto placeholder:text-center placeholder:text-cyan-400 placeholder:font-mono placeholder:font-semibold text-center rounded-md text-lg bg-amber-800 ring-2 ring-green-500 mt-3 text-sky-300 sm:text-2xl"
+                placeholder="Your Name" id="name" autocomplete="off">
+            <p class="text-white text-4xl font-extrabold text-center"> + </p>
+            <input type="text"
+                class="flow-root mx-auto placeholder:text-center placeholder:text-cyan-400 placeholder:font-mono placeholder:font-semibold text-center rounded-md text-lg bg-amber-800 ring-2 ring-green-500 my-3 text-sky-300 sm:text-2xl"
+                placeholder="His/Her Name" id="lname" autocomplete="off">
+        </form>
+        <br>
+        <div>
+            <button
+                class="bg-yellow-300 px-5 mx-auto flow-root ring-2 active:bg-pink-500 active:text-yellow-300 active:ring-red-900 ring-slate-900 rounded-md text-lg text-rose-700 sm:text-2xl sm:my-3"
+                onclick="checkloveper()">Click</button>
+        </div>
+        <br>
+        <input type="text" name="" id="lovevalue"
+            class="flow-root mx-auto placeholder:text-center placeholder:text-cyan-400 placeholder:font-mono placeholder:font-semibold text-center rounded-md text-lg bg-amber-800 ring-2 ring-green-500 text-sky-300 sm:text-2xl"
+            placeholder="Love percentage" readonly>
+        <div id="result" class="text-rose-400 font-sans font-bold mt-4 text-lg text-center md:text-3xl"></div>
+    </div>
+    <script>
+        window.onload = function(){ document.getElementById("loading").style.display = "none" }
+    </script>
+</body>
+
+</html>
